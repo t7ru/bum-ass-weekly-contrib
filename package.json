@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "Weekly Discord channel contribution tracker",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "t7ru",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "discord.js": "^14.24.2"

@@ -14,7 +14,7 @@ const WEBHOOK_URL = process.env.WEBHOOK_URL;
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
 client.once('ready', async () => {
-  console.log('Bot is ready!');
+  console.log('Bum is ready!');
 
   try {
     const channel = await client.channels.fetch(CHANNEL_ID);
@@ -92,7 +92,7 @@ client.once('ready', async () => {
 
     const embed = {
       title: 'This Week\'s Top Contributors',
-      description: `${top5.map(([name, count], i) => `${i+1}. [${name}](https://tds.fandom.com/User:${name}) - ${count} edit${count === 1 ? '' : 's'}`).join('\n')}\n\n[📊 View full recap](https://github.com/t7ru/bum-ass-weekly-contrib/blob/main/week/${data.week}.json)`,
+      description: `${top5.map(([name, count], i) => `${i+1}. [${name}](https://tds.fandom.com/User:${name}) - ${count} edit${count === 1 ? '' : 's'}`).join('\n')}\n\n[📊 View full recap](https://github.com/Paradoxum-Wikis/weekly-contributor-test/blob/main/week/${data.week}.json)`,
       footer: {
         text: `Top 5 contributors from ${formatDate(lastMonday)} to ${formatDate(new Date(now.getTime() - 86400000))}`,
       },
